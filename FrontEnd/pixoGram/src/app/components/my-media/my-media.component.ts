@@ -46,6 +46,17 @@ getId(data) {
   sessionStorage.setItem('intentid', data);
 
 }
+  
+  updateLikes(data)
+{
+  console.log("click recorded"+data);
+  this.uploadService.updateLike(data,1).subscribe();
+}
+
+decreaseLikes(data)
+{
+ this.uploadService.updateLike(data,0).subscribe();
+} 
 
 
 }
