@@ -25,6 +25,7 @@ public class UploadMedia {
 	private String url;
 	private String date;
 	private String username;
+	private int likes;
 	  
      
 	
@@ -45,11 +46,7 @@ public class UploadMedia {
 		this.description = description;
 		this.tags = tags;
 		this.url = url;
-		//this.currentDate = currentDate;
-		/*
-		 * SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
-		 * Date date = new Date(); currentDate = formatter.format(date);
-		 */
+		
 	}
 
 	public UploadMedia() {
@@ -57,7 +54,7 @@ public class UploadMedia {
 		// TODO Auto-generated constructor stub
 	}
 
-	public UploadMedia(int uid, String title, String description, String tags, String url,String date,String username) {
+	public UploadMedia(int uid, String title, String description, String tags, String url,String date,String username int line) {
 		super();
 		this.uid = uid;
 		this.title = title;
@@ -66,7 +63,8 @@ public class UploadMedia {
 		this.url = url;
 		this.username = username;
 		this.setDate(date);
-		//this.currentDate = currentDate;
+		this.likes=likes;
+		
 	}
 
 	public int getId() {
@@ -124,6 +122,14 @@ public class UploadMedia {
 	}
 
 	public void setDate(String date) {
+		this.date = date;
+	}
+	
+	public int getLike() {
+		return date;
+	}
+
+	public void setlike(int Like) {
 		this.date = date;
 	}
 	
