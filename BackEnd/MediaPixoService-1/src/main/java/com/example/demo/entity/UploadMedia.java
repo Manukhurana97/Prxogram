@@ -54,7 +54,7 @@ public class UploadMedia {
 		// TODO Auto-generated constructor stub
 	}
 
-	public UploadMedia(int uid, String title, String description, String tags, String url,String date,String username int line) {
+	public UploadMedia(int uid, String title, String description, String tags, String url,String date,String username, int line) {
 		super();
 		this.uid = uid;
 		this.title = title;
