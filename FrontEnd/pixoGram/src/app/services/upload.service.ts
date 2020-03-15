@@ -28,6 +28,12 @@ export class UploadService {
   getAllMedia(): Observable<any> {
     return this.http.get(this.baseUrl + '/allmedia');
   }
+  
+  updateLike(id: number, flag:number):Observable<any>{
+     return this.http.put(this.baseUrl+'/like/'+`${id}`+'/'+`${flag}`,{});
+ 
+  }
+
 
 
 }
