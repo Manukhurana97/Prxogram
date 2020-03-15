@@ -22,4 +22,10 @@ spring:
   application:
     name: user-service
     
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    
    
