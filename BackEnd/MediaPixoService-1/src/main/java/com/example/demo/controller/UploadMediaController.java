@@ -50,6 +50,20 @@ public class UploadMediaController {
 		return uploadMediaService.getMediaById(userId);
 	}
 	
+	@PutMapping("/media/like/{id}/{flag}")
+	 public UploadMedia updateLike(@PathVariable int id, @PathVariable int flag) {
+		 Optional<UploadMedia> um = uploadMediaService.getMediaById(id);
+		 UploadMedia upmedia = um.get();
+		 if(flag==1) {
+		 upmedia.setLikes((upmedia.getLikes())+1);}
+		 else {
+			 upmedia.setLikes((upmedia.getLikes())-1);
+		 }
+		 uploadMediaService.createMedia(upmedia);
+		 return upmedia;
+	 }
+	 
+	
 	
 
 }
