@@ -10,7 +10,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://database-1.c8covifcvsel.ap-south-1.rds.amazonaws.com:3306/pixogram
+    url: jdbc:mysql://localhost:3306/pixogram
     username: admin
     password: Manu12345
 
